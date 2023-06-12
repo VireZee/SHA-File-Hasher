@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        color: #fff;
+
+        #head1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+            flex-grow: 1;
+        }
+    }
+
+    .input {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        #droppable-zone {
+            border: 5px dashed #000;
+            border-radius: 20px;
+            height: 30vh;
+            width: 70vw;
+            position: relative;
+
+            #droppable-zone-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+
+                #droppable-zone-text {
+                    text-align: center;
+                    font-size: 25px;
+                }
+            }
+
+            .droppable-file {
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .output {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+
+        textarea#output256 {
+            font-size: 14px;
+            text-align: center;
+            height: 25vh;
+            width: 23vw;
+            border: 7px double #000;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        textarea#output384 {
+            font-size: 14px;
+            text-align: center;
+            height: 25vh;
+            width: 34.5vw;
+            border: 7px double #000;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        textarea#output512 {
+            font-size: 14px;
+            text-align: center;
+            height: 25vh;
+            width: 46vw;
+            border: 7px double #000;
+            border-radius: 5px;
+            resize: none;
+
+        }
+
+    }
+
+    ::placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 20vh;
+    }
+
+    .remove {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #remove {
+            padding: 10px 15px;
+            background-color: #f00;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+    }
+}
