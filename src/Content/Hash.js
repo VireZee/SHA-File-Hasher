@@ -12,5 +12,6 @@ const Hash = (e) => {
     SHA3256(e);
     SHA3384(e);
     SHA3512(e);
+    return;
 };
 export default Hash;

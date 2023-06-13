@@ -10,6 +10,6 @@ const Hash = () => {
         output.value = hash;
     };
     reader.readAsArrayBuffer(input);
-
+    return;
 };
 export default Hash;

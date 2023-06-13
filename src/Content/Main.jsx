@@ -1,4 +1,5 @@
 import React from 'react';
+import Load from './Load'
 import Hash from './Hash';
 import Clear from './Clear';
 
