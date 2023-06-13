@@ -5,17 +5,14 @@
 
     header {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 1rem;
         background-color: #333;
         color: #fff;
 
-        #head1 {
+        #head {
             color: #fff;
-            text-align: center;
+            margin: auto;
             font-size: 2rem;
-            flex-grow: 1;
         }
     }
 
@@ -60,34 +57,31 @@
         display: flex;
         justify-content: center;
 
-        textarea#output256 {
+        textarea#output256, textarea#output3-256 {
             font-size: 14px;
             text-align: center;
             height: 25vh;
             width: 23vw;
             border: 7px double #000;
             border-radius: 5px;
-            resize: none;
         }
 
-        textarea#output384 {
+        textarea#output384, textarea#output3-384 {
             font-size: 14px;
             text-align: center;
             height: 25vh;
             width: 34.5vw;
             border: 7px double #000;
             border-radius: 5px;
-            resize: none;
         }
 
-        textarea#output512 {
+        textarea#output512, textarea#output3-512 {
             font-size: 14px;
             text-align: center;
             height: 25vh;
             width: 46vw;
             border: 7px double #000;
             border-radius: 5px;
-            resize: none;
 
         }
 
