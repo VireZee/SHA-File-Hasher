@@ -1,12 +1,12 @@
-import CryptoJS from 'crypto-js';
+import SHA3 from 'js-sha3';
 
 const Hash = () => {
     const input = document.getElementById("input").files[0];
-    const output = document.getElementById("output512");
+    const output = document.getElementById("output3-384");
     const reader = new FileReader();
     reader.onload = function (e) {
-        const wordArray = CryptoJS.lib.WordArray.create(e.target.result);
-        const hash = CryptoJS.SHA512(wordArray);
+        const wordArray = Array.from(new Uint8Array(e.target.result));
+        const hash = SHA3.sha3_384(wordArray);
         output.value = hash;
     };
     reader.readAsArrayBuffer(input);

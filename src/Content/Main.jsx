@@ -17,22 +17,16 @@ function Main() {
                 </div>
             </div>
             <div className="output">
-                <textarea id="output256" placeholder="SHA-256 Checksum" readOnly disabled></textarea>
-            </div>
-            <div className="output">
-                <textarea id="output3-256" placeholder="SHA3-256 Checksum" readOnly disabled></textarea>
-            </div>
-            <div className="output">
-                <textarea id="output384" placeholder="SHA-384 Checksum" readOnly disabled></textarea>
-            </div>
-            <div className="output">
-                <textarea id="output3-384" placeholder="SHA3-384 Checksum" readOnly disabled></textarea>
-            </div>
-            <div className="output">
-                <textarea id="output512" placeholder="SHA-512 Checksum" readOnly disabled></textarea>
-            </div>
-            <div className="output">
-                <textarea id="output3-512" placeholder="SHA3-512 Checksum" readOnly disabled></textarea>
+                <div className="left-output">
+                    <textarea id="output256" placeholder="SHA-256 Checksum" readOnly disabled></textarea>
+                    <textarea id="output384" placeholder="SHA-384 Checksum" readOnly disabled></textarea>
+                    <textarea id="output512" placeholder="SHA-512 Checksum" readOnly disabled></textarea>
+                </div>
+                <div className="right-output">
+                    <textarea id="output3-256" placeholder="SHA3-256 Checksum" readOnly disabled></textarea>
+                    <textarea id="output3-384" placeholder="SHA3-384 Checksum" readOnly disabled></textarea>
+                    <textarea id="output3-512" placeholder="SHA3-512 Checksum" readOnly disabled></textarea>
+                </div>
             </div>
             <div className="remove">
                 <button id="remove" onClick={Clear}>Clear</button>

@@ -13,6 +13,7 @@
             color: #fff;
             margin: auto;
             font-size: 2rem;
+            text-align: center;
         }
     }
 
@@ -53,36 +54,40 @@
     }
 
     .output {
-        padding: 10px 0;
         display: flex;
-        justify-content: center;
+        text-align: center;
 
         textarea#output256, textarea#output3-256 {
+            margin: 20px 0;
             font-size: 14px;
             text-align: center;
             height: 25vh;
             width: 23vw;
             border: 7px double #000;
             border-radius: 5px;
+            resize: none;
         }
 
         textarea#output384, textarea#output3-384 {
+            margin: 20px 0;
             font-size: 14px;
             text-align: center;
             height: 25vh;
             width: 34.5vw;
             border: 7px double #000;
             border-radius: 5px;
+            resize: none;
         }
 
         textarea#output512, textarea#output3-512 {
+            margin: 20px 0;
             font-size: 14px;
             text-align: center;
             height: 25vh;
             width: 46vw;
             border: 7px double #000;
             border-radius: 5px;
-
+            resize: none;
         }
 
     }
