@@ -16,20 +16,20 @@ function Main() {
                     <input className="droppable-file" id="input" type="file" onChange={Hash} />
                 </div>
             </div>
+            <div className="remove">
+                <button id="remove" onClick={Clear}>Clear</button>
+            </div>
             <div className="output">
-                <div className="left-output">
+                <div>
                     <textarea id="output256" placeholder="SHA-256 Checksum" readOnly disabled></textarea>
                     <textarea id="output384" placeholder="SHA-384 Checksum" readOnly disabled></textarea>
                     <textarea id="output512" placeholder="SHA-512 Checksum" readOnly disabled></textarea>
                 </div>
-                <div className="right-output">
+                <div>
                     <textarea id="output3-256" placeholder="SHA3-256 Checksum" readOnly disabled></textarea>
                     <textarea id="output3-384" placeholder="SHA3-384 Checksum" readOnly disabled></textarea>
                     <textarea id="output3-512" placeholder="SHA3-512 Checksum" readOnly disabled></textarea>
                 </div>
-            </div>
-            <div className="remove">
-                <button id="remove" onClick={Clear}>Clear</button>
             </div>
         </div>
     );

@@ -7,11 +7,11 @@ import SHA3512 from '../Secure/SHA3-512';
 
 const Hash = (e) => {
     SHA256(e);
-    SHA384(e);
-    SHA512(e);
-    SHA3256(e);
-    SHA3384(e);
-    SHA3512(e);
+    // SHA384(e);
+    // SHA512(e);
+    // SHA3256(e);
+    // SHA3384(e);
+    // SHA3512(e);
     return;
 };
 export default Hash;
