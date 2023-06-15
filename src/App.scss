@@ -16,7 +16,6 @@
             text-align: center;
         }
     }
-
     .input {
         padding-top: 10px;
         display: flex;
@@ -41,7 +40,6 @@
                     font-size: 25px;
                 }
             }
-
             .droppable-file {
                 position: absolute;
                 top: 0;
@@ -52,12 +50,12 @@
             }
         }
     }
-
     .output {
         display: flex;
         text-align: center;
 
-        textarea#output256, textarea#output3-256 {
+        textarea#output256,
+        textarea#output3-256 {
             margin: 20px 0;
             font-size: 14px;
             text-align: center;
@@ -67,8 +65,8 @@
             border-radius: 5px;
             resize: none;
         }
-
-        textarea#output384, textarea#output3-384 {
+        textarea#output384,
+        textarea#output3-384 {
             margin: 20px 0;
             font-size: 14px;
             text-align: center;
@@ -78,8 +76,8 @@
             border-radius: 5px;
             resize: none;
         }
-
-        textarea#output512, textarea#output3-512 {
+        textarea#output512,
+        textarea#output3-512 {
             margin: 20px 0;
             font-size: 14px;
             text-align: center;
@@ -89,9 +87,7 @@
             border-radius: 5px;
             resize: none;
         }
-
     }
-
     ::placeholder {
         display: flex;
         align-items: center;
@@ -99,7 +95,6 @@
         text-align: center;
         line-height: 25vh;
     }
-
     .remove {
         padding: 10px 0;
         display: flex;
